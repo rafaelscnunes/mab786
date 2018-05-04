@@ -50,7 +50,7 @@ def one_hot(real_vec, min_value=-1.0, max_value=1.0, n=10):
 
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
-                          title='Confusion matrix',
+                          title='Matriz de Confusão',
                           cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
@@ -65,9 +65,9 @@ def plot_confusion_matrix(cm, classes,
 
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        print("Normalized confusion matrix")
+        print("Matriz de confusão normalizada")
     else:
-        print('Confusion matrix, without normalization')
+        print('Matriz de confusão sem normalização')
 
     print(cm)
 
